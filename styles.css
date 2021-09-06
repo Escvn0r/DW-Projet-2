@@ -58,7 +58,6 @@ ul li
 {
     height: 100px;
     color: #0065fc;
-    
 }
 .bckGris
 {
@@ -95,7 +94,7 @@ a
 {
     color: rgba(168, 161, 163, 0.329);
 }
-/* NAV */
+/* ***NAV*** */
 
 
 
@@ -130,7 +129,7 @@ padding-left: 20px;
 .loca
 {
     border-radius: 10px 0 0 10px;
-    height: 30px;
+    height: 26px;
     width: 30px;
     padding: 10px;
 }
@@ -267,37 +266,33 @@ padding-left: 20px;
 }*/
 .logt
 {
-    
     margin-top: 2rem;
     padding: 1.8rem;
     background-color:#F2F2F2;
     border-radius: 0.75rem;
     width: 700px;
-
 }
-
-/*.logt_title 
-{
-    /*grid-column: 1/-1;*/
-}*/
 
 .logt_card 
 {
-    box-shadow: 1px 1px 10px #afaeae;
-    border-radius: 0.75rem;
-    padding: 0.5rem;
-    display: flex;
     flex-direction: column;
     width: 200px;
     margin-right: 1rem;
     margin-bottom: 1rem;
+    box-shadow: 1px 1px 10px #afaeae;
+    border-radius: 0.75rem;
+    padding: 0.5rem;
+    display: flex;
 }
 
 .logt_card:hover 
 {
     transform: scale(1.01);
 }
-
+.logt_card h3
+{
+    font-size: 1rem;
+}
 .logt_card_img 
 {
     position: relative;
@@ -313,61 +308,8 @@ padding-left: 20px;
     font-weight: bold;
     color: black;
 }
-.imgHeb1
-{
-    background-image: url("./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
-    /*width: 100%;*/
-    height: 120px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 15px 15px 0 0;
-}
-.imgHeb2
-{
-    background-image: url("./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
-    /*width: 100%;*/
-    height: 120px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 15px 15px 0 0;
-}
-.imgHeb3
-{
-    background-image: url("./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
-    /*width: 100%;*/
-    height: 120px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 15px 15px 0 0;
-}
-.imgHeb4
-{
-    background-image: url("./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
-    /*width: 100%;*/
-    height: 120px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 15px 15px 0 0;
-}
-.imgHeb5
-{
-    background-image: url("./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
-    /*width: 100%;*/
-    height: 120px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 15px 15px 0 0;
-}
-.imgHeb6
-{
-    background-image: url("./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
-    /*width: 100%;*/
-    height: 120px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 15px 15px 0 0;
-}
-/* ********** Aside ********** */
+
+/* *** Aside *** */
 .aside 
 {
     
@@ -449,7 +391,7 @@ padding-left: 20px;
     object-fit: cover;
     margin-bottom: 2rem;
 }
-/* ********** Activity ********** */
+/* *** Activity *** */
 #activityBlock 
 {
     padding: 10px 0px 20px 0px;
@@ -474,9 +416,9 @@ padding-left: 20px;
   
   .vieuxPortPic 
   {
-    object-fit: cover;
-    width: 100%;
-    height: 150px;
+    /*object-fit: cover;
+    width: 100%;*/
+    height: 180px;
     border-radius: 20px 20px 0px 0px;
   }
   
@@ -534,7 +476,7 @@ padding-left: 20px;
   
   .calanquesPic 
   {
-    object-fit: cover;
+    /*object-fit: cover;*/
     width: 100%;
     height: 150px;
     border-radius: 20px 20px 0px 0px;
@@ -584,9 +526,12 @@ padding-left: 20px;
     font-weight: bold;
     font-size: large;
     padding-left: 20px;
+    padding-right: 20px;
   }
+
   /* ********** Footer ********** */
-.section_footer {
+.section_footer 
+{
     background-color:#F2F2F2;
     width: 100%;
     margin-top: 2rem;
