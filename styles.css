@@ -1,71 +1,101 @@
 /* ***GENERAL*** */
 html,body
 {
-    font-family: Raleway, sans-serif;
+    color: black;
+    margin: auto;
+    font-family: "Raleway", sans-serif;
+    max-width: 1430px;
+    position: relative;
 }
+
 *{
 	/*margin: 0;*/
     padding: 0;
     font-family: 'Raleway', sans-serif;
+} 
+
+
+/* ***NAV*** */
+a:hover 
+{
+    text-decoration: none;
 }
-.line {
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header .menu 
+{
     display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+header li 
+{
+    list-style: none;
+}
+
+ #container 
+ {
+    max-width: 95%;
+    margin: 0 auto;
+} 
+
+.logo 
+{
+    padding-top: 10px;
+}
+
+.header-top 
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    padding-top: 35px;
+    margin-bottom: 35px;
 }
 
-.esapcevide {
-    flex-grow: 6;
-}
-
-.borderHeb:hover
+.header-top .menu 
 {
-    border-top: 1px solid #0065fc;
-}
-.borderSign
-{
-    border: 1px solid transparent;
-    color:  #0065fc;
-    font-weight: bold;  
-}
-.column {
-    flex-grow: 1;
-    text-align: center;
-}
-ul li
-{
+    margin-top: 20px;
+    margin-right: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-decoration: none;
     list-style-type: none;
 }
+
+.header-top .menu a 
+{
+    text-decoration: none;
+    padding-top: 53px;
+    margin-right: 50px;
+    font-size: 16px;
+}
+
+.header-top .menu a:hover 
+{
+    border-top: 2px solid #0065fc;
+    color: #0065fc;
+}
+
+.register 
+{
+    color: #0065fc;
+    font-weight: bolder;
+} /* Guillaume x Escv */
 .flexCenter
 {
     display: flex;
     /*justify-content: center;*/
     align-items: center;
-}
-.flexAround
-{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.flexBetween
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.navSize 
-{
-    height: 100px;
-    color: #0065fc;
-}
-.bckGris
-{
-    background-color: #f2f2f2;
-}
-.bckBlue
-{
-    background-color: #0065fc;
 }
 
 .clear
@@ -81,6 +111,14 @@ a
 {
     border: none;
 }
+.bckBlue
+{
+    background-color: #0065fc;
+}
+.bckGris
+{
+    background-color: #f2f2f2;
+}
 .stars 
 {
     display: flex;
@@ -94,33 +132,12 @@ a
 {
     color: rgba(168, 161, 163, 0.329);
 }
-/* ***NAV*** */
 
-
-
-.ajust
+ul li
 {
-margin-bottom: 7px;
+    list-style-type: none;
 }
 
-/*.sizeLinks
-{
-    width: 140%;
-    height: 99px;
-}*/
-.linkColor
-{
-    
-    --bluecolor: #0065fc;
-}
-.linkColor2
-{
-    color: black;
-}
-.colorBlue
-{
-    --bluecolor:#0065fc;
-}
 /* ***SEARCH*** */
 .spaceSearch
 {
@@ -128,17 +145,19 @@ padding-left: 20px;
 }
 .loca
 {
-    border-radius: 10px 0 0 10px;
-    height: 26px;
-    width: 30px;
+    justify-content: center;
     padding: 10px;
 }
+
 .bordureSearch
 {
-    padding: 1px;
-    width: 40px;
-    border-radius: 15px 0 0 15px;
-    border: 0.5px solid #f2f2f2;
+    padding: 10px;
+    padding-left: 10px;
+    background-color: #f2f2f2;
+    border-radius: 15px 0px 0px 15px;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
 }
 .search
 {
@@ -250,20 +269,7 @@ padding-left: 20px;
     font-size: 13px;
 }
 /* ***HEBERGEMENTS*** */
-/*.sizeHeb
-{
-  flex:2;
-  height: 650px;
-  margin-right: 20px;
-  border-radius: 10px;
-}
-.sizeMpop
-{
-    flex:1;
-    height: 650px;
-    margin-left: 20px;
-    border-radius: 10px;
-}*/
+
 .logt
 {
     margin-top: 2rem;
@@ -276,7 +282,7 @@ padding-left: 20px;
 .logt_card 
 {
     flex-direction: column;
-    width: 200px;
+    /*width: 200px;*/
     margin-right: 1rem;
     margin-bottom: 1rem;
     box-shadow: 1px 1px 10px #afaeae;
@@ -292,6 +298,10 @@ padding-left: 20px;
 .logt_card h3
 {
     font-size: 1rem;
+    color: black;
+    height: 0.5rem;
+    margin: -1px;
+    margin-top: -25px;
 }
 .logt_card_img 
 {
@@ -302,17 +312,25 @@ padding-left: 20px;
 .logt_card_desc 
 {
     margin-bottom: 0.5rem;
+    color: black;
 }
 .show_more 
 {
+    font-size: 1.1em;
     font-weight: bold;
     color: black;
+    margin-left: 2px;
 }
 
 /* *** Aside *** */
+
+.chart
+{
+    margin-right: 10px;
+    margin-top: 20px;
+}
 .aside 
 {
-    
     margin-left: 2rem;
     margin-top: 2rem;
     padding: 1.8rem;
@@ -360,6 +378,7 @@ padding-left: 20px;
 .aside_card h3 
 {
     font-size: 1rem;
+    display: contents;
 }
 
 .aside_card_desc 
@@ -369,6 +388,7 @@ padding-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    color: black;
 }
 
 .hebegerment 
@@ -391,145 +411,180 @@ padding-left: 20px;
     object-fit: cover;
     margin-bottom: 2rem;
 }
+
 /* *** Activity *** */
-#activityBlock 
-{
-    padding: 10px 0px 20px 0px;
+
+  #activite 
+  {
+    border-radius: 18px;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
 }
-  
-  .activityOptions 
-  {
-    display: flex;
-  }
-  
-  .vieuxPortCard 
-  {
+
+.activites 
+{
     text-decoration: none;
-    color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 550px;
+    margin-left: -2px;
+    margin-right: 200px;
+}
+
+.activites figure 
+{
+    margin: 0;
+    width: 22%;
+    height: 450px;
+}
+
+.activity-title 
+{
+    margin: 15px 0;
+}
+
+#activite h2 
+{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#activite p
+{
+    padding: 10px 0 35px 20px;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.activity-simple-card 
+{
+    overflow: hidden;
+    background-color: white;
+    border: 2px #f2f2f2 solid;
+    border-radius: 20px;
+    box-shadow: 4px 4px 11px -6px #9a9a9a;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+
+.activity-simple-card:hover 
+{
+    transform: scale(1.04);
+}
+
+.activity-simple-card img 
+{
+    height: 390px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.activity-double-card 
+{
     display: flex;
     flex-direction: column;
-    background-color: white;
-    box-shadow: 0px 0px 10px lightgray;
-    border-radius: 20px;
-    margin: 20px 20px 20px 0px;
-  }
-  
-  .vieuxPortPic 
-  {
-    /*object-fit: cover;
-    width: 100%;*/
+    justify-content: space-between;
+}
+
+.activity-double2-card 
+{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+
+.activity-card1 img 
+{
+    width: 100%;
+}
+
+.activity-card1-1 img 
+{
+    width: 100%;
+}
+
+.activity-med-img img 
+{
     height: 180px;
-    border-radius: 20px 20px 0px 0px;
-  }
-  
-  .pomèguesCard 
-  {
-    text-decoration: none;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    box-shadow: 0px 0px 10px lightgray;
-    border-radius: 20px;
-    margin: 20px 20px 20px 0px;
-  }
-  
-  .pomèguesPic 
-  {
+    max-width: 100%;
     object-fit: cover;
-    width: 100%;
-    height: 150px;
-    border-radius: 20px 20px 0px 0px;
-  }
-  
-  .frioulCard 
-  {
-    text-decoration: none;
-    color: black;
-    display: flex;
-    flex-direction: column;
+}
+
+.activity-card1 
+{
     background-color: white;
-    box-shadow: 0px 0px 10px lightgray;
+    border: 2px #f2f2f2 solid;
     border-radius: 20px;
-    margin: 20px 20px 20px 0px;
-  }
-  
-  .frioulPic 
-  {
+    box-shadow: 4px 4px 11px -6px #9a9a9a;
+    height: 240px;
+    overflow: hidden;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+
+.activity-card1-1 
+{
+    background-color: white;
+    border: 2px #f2f2f2 solid;
+    border-radius: 20px;
+    box-shadow: 4px 4px 11px -6px #9a9a9a;
+    height: 200px;
+    overflow: hidden;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+
+.activity-card1:hover 
+{
+    transform: scale(1.08);
+}
+
+.activity-card1-1:hover 
+{
+    transform: scale(1.08);
+}
+
+.activity-card2
+{
+    background-color: white;
+    border: 2px #f2f2f2 solid;
+    border-radius: 20px;
+    box-shadow: 4px 4px 11px -6px #9a9a9a;
+    overflow: hidden;
+}
+
+.activity-card2 
+{
+    height: 165px;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+
+.activity-card2:hover 
+{
+    transform: scale(1.08);
+}
+.activity-card2-small img 
+{
+    height: 145px;
+    width: 100%;
+    max-width: 100%;
     object-fit: cover;
+}
+
+.activity-small-card img 
+{
+    height: 110px;
     width: 100%;
-    height: 150px;
-    border-radius: 20px 20px 0px 0px;
-  }
-  
-  .calanquesCard 
-  {
-    text-decoration: none;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    box-shadow: 0px 0px 10px lightgray;
-    border-radius: 20px;
-    margin: 20px 20px 20px 0px;
-  }
-  
-  .calanquesPic 
-  {
-    /*object-fit: cover;*/
-    width: 100%;
-    height: 150px;
-    border-radius: 20px 20px 0px 0px;
-  }
-  
-  .notreDameCard 
-  {
-    text-decoration: none;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    box-shadow: 0px 0px 10px lightgray;
-    border-radius: 20px;
-    margin: 20px 20px 20px 0px;
-  }
-  
-  .notreDamePic 
-  {
+    max-width: 100%;
     object-fit: cover;
-    width: 100%;
-    height: 150px;
-    border-radius: 20px 20px 0px 0px;
-  }
-  
-  .longchampCard 
-  {
-    color: black;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    box-shadow: 0px 0px 10px lightgray;
-    border-radius: 20px;
-    margin: 20px 20px 20px 0px;
-  }
-  
-  .longchampPic 
-  {
-    object-fit: cover;
-    width: 100%;
-    height: 150px;
-    border-radius: 20px 20px 0px 0px;
-  }
-  
-  .cardName 
-  {
-    font-weight: bold;
-    font-size: large;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+}
+
 
   /* ********** Footer ********** */
+
 .section_footer 
 {
     background-color:#F2F2F2;
@@ -545,7 +600,8 @@ padding-left: 20px;
 {
     width: 1200px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    background-color:#F2F2F2;
 }
 
 .footer_element h3 
@@ -562,4 +618,19 @@ padding-left: 20px;
 .footer_element li:hover 
 {
     color: #0065FC;
+}
+
+/* ***@Media Queries*** */
+@media screen and (max-width: 1180px)
+{
+    body {
+        display: block;
+    }
+    .line{
+        width: 98%;
+        margin: 0 auto;
+    }
+    #containFilter{
+        flex-direction: column;
+    }
 }
