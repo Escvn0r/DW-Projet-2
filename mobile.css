@@ -1,0 +1,8 @@
+/* *** Media Queries *** */
+@media (max-width: 870px) 
+{
+    .aside {
+        width: 400;
+    }
+}
+
