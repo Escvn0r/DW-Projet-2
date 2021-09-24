@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* *** Media Queries *** */
 
 /* *** Tablettes *** */
@@ -242,3 +243,13 @@
     .footer_element {
         padding-bottom: 1.25rem;
     }
+=======
+/* *** Media Queries *** */
+@media (max-width: 870px) 
+{
+    .aside {
+        width: 400;
+    }
+}
+
+>>>>>>> 2df8df3e0feea1684776b29c1b04876468130e5b
